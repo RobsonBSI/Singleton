@@ -8,4 +8,9 @@ class modeloTest {
       modelo.getInicializar().setNomeCliente("Robson");
         assertEquals("Robson", modelo.getInicializar().getNomeCliente());
     }
+    @Test
+    public void TesteRetornoStatus(){
+        modelo.getInicializar().setStatusPedido("Cancelado");
+        assertEquals("Cancelado", modelo.getInicializar().getStatusPedido());
+    }
 }
